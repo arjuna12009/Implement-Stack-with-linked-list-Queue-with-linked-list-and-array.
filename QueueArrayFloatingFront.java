@@ -65,6 +65,11 @@ public class QueueArrayFloatingFront<T> implements QueueInterface<T> {
 			}
 		}
 		
+		public T peek()
+		{
+			return elements[front];
+		}
+		
 		public void print()
 		{
 			if(elements[rear]!=null)
@@ -74,13 +79,6 @@ public class QueueArrayFloatingFront<T> implements QueueInterface<T> {
 			}
 			else
 				System.out.println("Queue is empty");
-		}
-		
-		
-		public void print()
-		{
-			for(int i = front; i <= rear; i++)
-				System.out.println(elements[i]);
 		}
 		
 		public static void main(String[] args) {
