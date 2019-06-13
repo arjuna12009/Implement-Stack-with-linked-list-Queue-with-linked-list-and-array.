@@ -64,6 +64,11 @@ public class QueueArrayFixedFront<T> implements QueueInterface<T>{
 			}
 		}
 		
+		public T peek()
+		{
+			return elements[front];
+		}
+	
 		public void print()
 		{
 			for(int i = front; i <= rear; i++)
@@ -93,6 +98,7 @@ public class QueueArrayFixedFront<T> implements QueueInterface<T>{
 			System.out.println("\n Queue contains: \n");
 			m.print();
 			System.out.println("\n Front element deleted: " + m.dequeue());
+			System.out.println("\n Front element: " + m.peek());
 			System.out.println("\n Queue after a dequeue: \n");
 			m.print();
 			
