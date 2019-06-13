@@ -69,10 +69,16 @@ public class QueueArrayFixedFront<T> implements QueueInterface<T>{
 			return elements[front];
 		}
 	
+		
 		public void print()
 		{
-			for(int i = front; i <= rear; i++)
-				System.out.println(elements[i]);
+			if(elements[rear]!=null)
+			{
+				for(int i = front; i <= rear; i++)
+					System.out.println(elements[i]);
+			}
+			else
+				System.out.println("Queue is empty");
 		}
 		
 		public static void main(String[] args) {
