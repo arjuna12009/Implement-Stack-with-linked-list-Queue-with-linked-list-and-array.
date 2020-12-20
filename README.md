@@ -1,5 +1,5 @@
-# Assignment-4
-Implement Stack with linked list, Queue with linked list and array.
+
+# Implement Stack with linked list, Queue with linked list and array.
 
 Part – 1
 Implement stack with LinkedList.
